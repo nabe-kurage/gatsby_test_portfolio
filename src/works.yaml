@@ -2,7 +2,9 @@
   category: website
   year: 2020
   description: きれいなサイトを実装しました。
+  slug: great-site
 - title: きれいな本
   category: book
   year: 2020
   description: きれいな本を書きました。
+  slug: great-book

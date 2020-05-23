@@ -10,9 +10,11 @@ const IndexPage = ({ data }) => (
     <h1>Hello Great Gatsby</h1>
     {data.allWorksYaml.edges.map(edge => {
       const work = edge.node
-    return <div>
-      { work.title } - { work.category } - {work.year}
-    </div>
+      return <div>
+          <Link to={`/works/${work.slug}`}>
+            {work.title} - {work.category} - {work.year}
+          </Link>
+      </div>
 
     })}
 
@@ -28,6 +30,7 @@ query {
         title
         category
         year
+        slug
       }
     }
   }
